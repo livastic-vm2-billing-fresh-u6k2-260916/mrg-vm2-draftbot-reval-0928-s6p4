@@ -1,0 +1,13 @@
+name: VM2 DraftBot Hold
+on:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  hold:
+    name: vm2-draftbot-hold
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          sleep 45
+          exit 1
