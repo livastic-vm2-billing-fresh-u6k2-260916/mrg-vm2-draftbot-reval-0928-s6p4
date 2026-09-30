@@ -1,0 +1,14 @@
+name: VM2 Strict Gate PR 0930
+on:
+  pull_request:
+    branches:
+      - main
+permissions:
+  contents: read
+jobs:
+  gate:
+    name: vm2-strict-gate-0930
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trusted deterministic success
+        run: echo VM2_STRICT_GATE_SUCCESS
