@@ -1,1 +1,11 @@
 extends: mrg-vm2-draftbot-sharedcfg-0928-x7r2
+
+pull_request_rules:
+  - name: VM2 org strict up-to-date 0930
+    conditions:
+      - base = vm2-org-strict-target-0930
+      - title = VM2_ORG_STRICT_ARM_0930
+    actions:
+      merge:
+        method: merge
+        merge_bot_account: livastic-vm2-secondary-20260911
