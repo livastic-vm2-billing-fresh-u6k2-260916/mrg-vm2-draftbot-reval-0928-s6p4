@@ -1,5 +1,8 @@
 extends: mrg-vm2-draftbot-sharedcfg-0928-x7r2
 
+merge_queue:
+  mode: parallel
+
 scopes:
   source:
     files:
